@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Thu May 26 20:25:57 2022 as: nmap.exe -p 80 -&#45;script http-sql-injection -oX c:/temp/cikti.xml testphp.vulnweb.com -->
+<nmaprun scanner="nmap" args="nmap.exe -p 80 -&#45;script http-sql-injection -oX c:/temp/cikti.xml testphp.vulnweb.com" start="1653585957" startstr="Thu May 26 20:25:57 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="44.228.249.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="testphp.vulnweb.com" type="user"/>
+</hostnames>
+</hosthint>
+<host starttime="1653585957" endtime="1653585958"><status state="up" reason="reset" reason_ttl="125"/>
+<address addr="44.228.249.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="testphp.vulnweb.com" type="user"/>
+<hostname name="ec2-44-228-249-3.us-west-2.compute.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="6000" rttvar="6000" to="100000"/>
+</host>
+<runstats><finished time="1653585958" timestr="Thu May 26 20:25:58 2022" summary="Nmap done at Thu May 26 20:25:58 2022; 1 IP address (1 host up) scanned in 0.66 seconds" elapsed="0.66" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
